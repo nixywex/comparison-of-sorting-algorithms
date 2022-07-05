@@ -20,4 +20,13 @@
 */
 int getUsersFromFile(user users[], char* filePath);
 
+/**
+ *Зберігає дані з масиву до csv файлу.
+ *@param users масив, з якого читаються дані.
+ *@param filePath шлях для збереження готового файлу.
+ * @param length довжина масиву.
+ *@return 1, якщо вдалося записати дані, або -1, якщо виникла помилка.
+*/
+int writeSortedArr(user users[], char* filePath, int length);
+
 #endif

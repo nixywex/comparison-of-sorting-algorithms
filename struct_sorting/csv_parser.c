@@ -33,5 +33,25 @@ int getUsersFromFile(user users[], char* filePath){
         count++;
     }
     
+    fclose(F);
+    
     return count;
+}
+
+int writeSortedArr(user users[], char* filePath, int length){
+    char path[2048];
+    sprintf(&path, "%s_sorted.csv", filePath);
+    
+    FILE* F = fopen(path, "w");
+    if(F == NULL) return -1;
+    
+    for(int i = 0; i < length; i++){
+        user curr = users[i];
+
+        fprintf(F, "%s,%i,%f,%i,%i,%i\n", curr.name, curr.id, curr.sum, curr.date[0], curr.date[1], curr.date[2]);
+    }
+    
+    fclose(F);
+    
+    return 1;
 }
