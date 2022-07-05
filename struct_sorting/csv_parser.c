@@ -7,7 +7,7 @@
 
 #include "csv_parser.h"
 
-int getUsersFromFile(user users[], char* filePath){
+int getUsersFromFile(payment users[], char* filePath){
     FILE* F = fopen(filePath, "r");
     if(F == NULL) return -1;
     
@@ -38,7 +38,7 @@ int getUsersFromFile(user users[], char* filePath){
     return count;
 }
 
-int writeSortedArr(user users[], char* filePath, int length){
+int writeSortedArr(payment users[], char* filePath, int length){
     char path[2048];
     sprintf(&path, "%s_sorted.csv", filePath);
     
@@ -46,7 +46,7 @@ int writeSortedArr(user users[], char* filePath, int length){
     if(F == NULL) return -1;
     
     for(int i = 0; i < length; i++){
-        user curr = users[i];
+        payment curr = users[i];
 
         fprintf(F, "%s,%i,%f,%i,%i,%i\n", curr.name, curr.id, curr.sum, curr.date[0], curr.date[1], curr.date[2]);
     }

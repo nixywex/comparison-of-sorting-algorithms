@@ -18,7 +18,7 @@
  *@param filePath шлях до файлу.
  *@return кількість зчитаних полей, або -1, якщо файл не вдалося відкрити.
 */
-int getUsersFromFile(user users[], char* filePath);
+int getUsersFromFile(payment users[], char* filePath);
 
 /**
  *Зберігає дані з масиву до csv файлу.
@@ -27,6 +27,6 @@ int getUsersFromFile(user users[], char* filePath);
  * @param length довжина масиву.
  *@return 1, якщо вдалося записати дані, або -1, якщо виникла помилка.
 */
-int writeSortedArr(user users[], char* filePath, int length);
+int writeSortedArr(payment users[], char* filePath, int length);
 
 #endif

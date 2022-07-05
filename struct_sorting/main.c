@@ -14,7 +14,7 @@
 
 int main(int argc, const char * argv[]){
     if(argc == 2){
-        if(!strcmp(argv[1], "-i")){
+        if(!strcmp(argv[1], "-info")){
             printf("СОРТУВАННЯ МАСИВУ\nЗа допомогою цієї програми можна відсортувати масив типу user за"
                  "всіми полями та за допомгою 3-х алгоритмів сортування. \n\nВИКОРИСТАННЯ\n"
                  "Для роботи треба вказати такі аргументи : filePath -f type\nде, filePath - "
@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]){
         }
            
     } else if(argc == 4){
-        user users[MAX_SIZE];
+        payment users[MAX_SIZE];
         int length = getUsersFromFile(users, argv[1]);
         if(length == -1 || length > MAX_SIZE){
             puts("Помилка. Зчитати файл не вдалося");
