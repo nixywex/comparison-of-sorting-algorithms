@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E1219BB92874A76200B074DF /* Google_tests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Google_tests; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Универ/Технологии програмирования/Семестр 2/Практика/Задание 1 — копия/Google_tests"; sourceTree = "<group>"; };
+		E17C637F28757F840078AEFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1AF5B9D2874685F000ECD2E /* struct_sorting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = struct_sorting; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AF5BA02874685F000ECD2E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E1AF5BA7287468A3000ECD2E /* struct_sorting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = struct_sorting.h; sourceTree = "<group>"; };
@@ -64,12 +64,12 @@
 		E1AF5B9F2874685F000ECD2E /* struct_sorting */ = {
 			isa = PBXGroup;
 			children = (
-				E1219BB92874A76200B074DF /* Google_tests */,
 				E1AF5BA02874685F000ECD2E /* main.c */,
 				E1AF5BA7287468A3000ECD2E /* struct_sorting.h */,
 				E1AF5BA8287468A3000ECD2E /* struct_sorting.c */,
 				E1AF5BAA2874693B000ECD2E /* csv_parser.h */,
 				E1AF5BAB2874693B000ECD2E /* csv_parser.c */,
+				E17C637F28757F840078AEFB /* README.md */,
 			);
 			path = struct_sorting;
 			sourceTree = "<group>";
