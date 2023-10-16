@@ -1,13 +1,13 @@
 # Comparison of bubble sort, selection sort and insertion sort
-The topic, now that we have to deal with a large amount of data, is very relevant, but the algorithms that will be considered are not effective.
+The topic, now that we have to deal with a large amount of data, is very relevant, but the algorithms considered are not effective.
 
-**Purpose**: to analyze the implementation of the above algorithms, to compare their performance, to choose the most effective among the considered.
+**Purpose**: to analyze the implementation of the above algorithms, to compare their performance, and to choose the most effective among those considered.
 
-**Task**: to write code in the C programming language for three types of algorithms, to carry out tests on operability, to carry out tests on a large amount of data, to compare speed of work.
+**Task**: write code in C for three types of algorithms, carry out tests on operability, carry out tests on a large amount of data, and compare the speed of work.
 ## Realisation
-The implementation of the algorithms is written in the C programming language. For comparison, an array of personal structs was taken, with fields: id, name, sum and date, with a length of 20000 elements.
+The implementation of the algorithms is written in C. An array of personal structs with the fields id, name, sum, and date and a length of 20000 elements was used for comparison.
 
-Unit testing was done using the Google test framework.
+Unit testing was done using the Google testing framework.
 
 ### Bubble sort
 ```c
@@ -67,9 +67,9 @@ void insertionSort(int array[], int length){
 | Selection | О(n²)                 | О(n²)            | О(n²)               | Not practical | 2,216371                |
 | Insertion | О(n²)                 | О(n)             | О(n²)               | Mostly low    | 0,794791                |
 
-<sup>*</sup> the same arrays of struct, with a length of 20,000 elements and sorted by "date" field. The average time was calculated on the basis of 5 measurements of sorting in the C programming language.
+<sup>*</sup> the same arrays of struct, with a length of 20,000 elements, and sorted by the "date" field. The average time was calculated on the basis of 5 measurements of sorting in C.
 
 ## Conclusion
-After comparing the sorting algorithms, we can conclude that the most effective among them is sorting by inclusion, followed by sorting by choice and lastly the bubble method.
+After comparing the sorting algorithms, we can conclude that the most effective among them is sorting by inclusion, followed by sorting by selection, and finally the bubble method.
 
-These algorithms are in the same group (time O (n²)). There are more efficient methods that have an execution time of O (n log n), O (n), O (n log² n), but these algorithms are easy to implement and suitable for small data sets.
+These algorithms are in the same group (time O (n²)). There are more efficient methods with execution times of O(n log n), O(n), and O(n log² n), but these algorithms are easy to implement and suitable for small data sets.
